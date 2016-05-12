@@ -62,7 +62,7 @@
                             <a class="items" href="index.html">首页</a>
                         </li>
                         <li>
-                            <a class="items active" href="aboutMe.html">关于我们</a>
+                            <a class="items" href="aboutMe.html">关于我们</a>
                             <div class="down-nav">
                                 <ul>
                                     <li>
@@ -151,7 +151,7 @@
                             </div>
                         </li>
                         <li>
-                            <a class="items" href="welfare.html">福利来了</a>
+                            <a class="items active" href="welfare.html">福利来了</a>
                             <div class="down-nav">
                                 <ul>
                                     <li>
@@ -179,27 +179,37 @@
     <div class="main mb16 l-float">
         <div class="l-left w260" id="news-sub">
             <div class="columu-title mb6 border-none l-float">
-                <h3 class="title l-left">关于我们</h3>
+                <h3 class="title l-left">福利来了</h3>
             </div>
-            <div class="accordion"><a href="##"><h4>中心介绍</h4></a></div>
-            <div class="accordion"><a href="##"><h4>组织架构</h4></a></div>
-            <div class="accordion"><a href="##"><h4>中心年报</h4></a></div>
-            <div class="accordion"><a href="##"><h4>荣誉榜</h4></a></div>
+            <div class="accordion"><a href="##"><h4>我要抢券</h4></a></div>
+            <div class="accordion"><a href="##"><h4>文化产品</h4></a></div>
+            <div class="accordion"><a href="##"><h4>积分兑换</h4></a></div>
         </div>
         <div class="l-right" id="news-list">
             <div class="container pd10 mb10">
-                <div class="font24 col-lan"><a class="" href="index.html">关于我们</a>&nbsp;&gt;&nbsp;<span class="">中心介绍</span>
+                <div class="font24 col-lan"><a class="" href="index.html">福利来了</a>&nbsp;&gt;&nbsp;<span class="">我要抢券</span>
                 </div>
             </div>
-            <div class="newsInfo-box listbox-border l-float">
-                <h3 class="title pd20 col-lan font18 text-ac">开发区举行“备战2015年市运会（成人组）”动员大会</h3>
-                <p class="time text-ac pdb20">发布时间：2016-05-02</p>
-                <div class="newsInfo-text">
-                        12号，我区召开“备战2015年市运会（成人组）”动员会，议会共有30位主要负责人及教练参加。会上，区备战市运会组委
-                对“备战2015年市运会”的各项目组队分工及竞赛要求进行了详细的安排和部署。<br>
-                       大会组委相关负责人表示要搞好我区参加市第七届运动会的备战工作，必须明确各单位、各部门和承训单位的职责、任务，扎<br>
-                实抓好各项工作，圆满完成区党工委、管委会下达的我区参加市第七届运动会勇夺冠军的目标任务。会中，大家积极发言，为各项
-                备战出谋划策，并表示积极响应，选最优秀的队员，刻苦训练，圆满完成任务。
+            <div class="siteinfo-box listbox-border">
+                <div class="l-float mb40">
+                    <div class="parameter l-right w100">
+                        <h3 class="title font24 col-lan pdb20">英雄传说搏击馆优惠券</h3>
+                        <p class="input pdb20"><span class="font14 col-lan mr10 w60">使用期限</span> <span class="font14 col-lan">2015/12/05-2016/01/01</span></p>
+                        <p class="input pdb20"><span class="font14 col-lan mr10 w60">价值</span> <span class="font24 col-zi">￥30</span></p>
+                        <p class="input pdb20"><span class="font14 col-lan mr10 w60">使用条件</span> <span class="font14 col-lan">满150元使用</span></p>
+                        <p class="input pdb20"><span class="font14 col-lan mr10 w60">券编号</span> <span class="font14 col-lan">328654325</span></p>
+                        <p class=""><a class="btn btn-info mr10" id="showPopTxt" href="##">立即预定</a></p>
+                    </div>
+                </div>
+                <div class="site-title l-float">
+                    <h3>使用说明</h3>
+                </div>
+                <div class="sitesInfo-text">
+                    · 仅可以用于英雄搏击馆服务消费<br>
+                    · 可在手机微信刷票或转送给好友<br>
+                    · 满150元使用<br>
+                    · 使用有效期：2015/12/05至2015/12/12 <br>
+                    · 温馨提示：该券当前还剩2天，请快点击下方的按钮抢先使用吧！
                 </div>
             </div>
 
@@ -227,5 +237,39 @@
             <p class="text-ac col-bai font14">版权所有：中山火炬高技术产业开发区宣传文体服务中心<em></em>     粤ICP备14079610号   <em></em> 工信部网站</p>
         </div>
     </div>
+
+<!-- 弹出窗口代码 -->
+<div class="pop-bg">
+    <div class="pop-cont">
+        <!--title-->
+        <h3>恭喜你已经抢券成功</h3>
+        <!--以pop-cont-text分界-->
+        <div class="pop-cont-text text-ac">您已经抢得英雄传说搏击馆优惠券<br>面值为<em class="font24 col-zi">30元</em>一张</div>
+        <!--bottom:operate->
+        button-->
+        <div class="btm-btn">
+            <input type="button" value="确认" class="input-btn trueBtn"/>
+            <input type="button" value="关闭" class="input-btn falseBtn"/>
+        </div>
+    </div>
+</div>
 <script src="js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script>
+ $(document).ready(function(){
+ //弹出文本性提示框
+ $("#showPopTxt").click(function(){
+   $(".pop-bg").fadeIn();
+   });
+ //弹出：确认按钮
+ $(".trueBtn").click(function(){
+   alert("你点击了确认！");//测试
+   $(".pop-bg").fadeOut();
+   });
+ //弹出：取消或关闭按钮
+ $(".falseBtn").click(function(){
+   alert("你点击了取消/关闭！");//测试
+   $(".pop-bg").fadeOut();
+   });
+ });
+ </script>
 </body>

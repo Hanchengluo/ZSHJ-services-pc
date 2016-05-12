@@ -108,3 +108,206 @@
         }
     }
 }
+
+// --------------------新闻列表页面
+#news-sub{
+    width: 342px;
+    .accordion{
+        height: 46px;
+        margin-top: 6px;
+        line-height: 46px;
+        padding-left: 46px;
+        font-size: 20px;
+        color: #2c3444;
+        border: #ddd solid 1px;
+        background: url(../../images/icon-leftSub-01.png) 310px center no-repeat;
+    }
+    .accordion-desc{
+        background: #fff;
+        p{
+            height: 46px;
+            padding-left: 66px;
+            border-bottom: #ddd solid 1px;
+            border-right: #ddd solid 1px;
+            border-left: #1071E0 solid 4px;
+            &:hover{
+                background: url(../../images/xinwen/icon-jiant.png) #fff 14px 9px no-repeat;
+            }
+            a{
+                line-height: 46px;
+                font-size: 20px;
+                &:hover{
+                    text-decoration: underline;
+                    color: #1071E0;
+                }
+            }
+            .active{
+                text-decoration: underline;
+                color: #1071E0;
+            }
+        }
+    }
+}
+#news-list{
+    width: 846px;
+    .listbox-border{
+        padding: 0px 10px;
+        border-right: #ddd solid 1px;
+        border-left: #ddd solid 1px;
+        border-bottom: #ddd solid 1px;
+        background: url(../../images/icon-newsList-border.png) top center no-repeat;
+    }
+
+}
+.newsList-box{
+    .itemss{
+        li{
+            padding: 12px 0;
+            border-bottom: #ddd dashed 1px;
+            .l-float();
+            .text{
+                width:640px;
+            }
+            .title{
+                padding-bottom: 10px;
+                .ov-text();
+            }
+            .intro{
+                margin-bottom: 4px;
+                height: 52px;
+                overflow: hidden;
+            }
+        }
+    }
+}
+.newsInfo-box{
+    overflow:hidden;
+    .newsInfo-text{
+        margin-bottom: 40px;
+        font-size: 14px;
+        color: #474f58;
+        line-height: 150%;
+    }
+}
+
+// 场地预约列表页面 2016年5月12日16:40:58
+.siteList-box{
+    .itemss{
+        li{
+            width: 306px;
+            float: left;
+            border-bottom: #ddd dashed 1px;
+            margin-top: 20px;
+            padding: 0 53px 20px 53px;
+            img{
+                transition: all .6s;
+                -moz-transition: all .6s;
+                -ms-transition: all .6s;
+                -webkit-transition: all .6s;
+            }
+            &:hover img{
+                transform: scale(1.02);
+                -ms-transform: scale(1.02);
+                -moz-transform: scale(1.02);
+                -webkit-transform: scale(1.02);
+                -o-transform: scale(1.02);
+            }
+        }
+    }
+}
+.siteinfo-box{
+    padding:30px !important;
+    .parameter{
+        width:444px;
+        .inputTime{
+            width:140px;
+            height: 22px;
+            line-height: 22px;
+            padding-left: 24px;
+            border: #1f97ed solid 1px;
+            border-radius: 3px;
+            color: #474f58;
+            background: url(../../images/icon-inputTime.png) 4px center no-repeat;
+        }
+        .inputText{
+            width:160px;
+            height: 22px;
+            line-height: 22px;
+            padding-left: 4px;
+            border: #1f97ed solid 1px;
+            border-radius: 3px;
+            color: #474f58;
+        }
+        .selectTime{
+            margin-bottom: 10px;
+            .xuan{
+                margin-bottom: 10px;
+                display: inline-block;
+                padding: 5px 10px;
+                font-size: 14px;
+                text-align: center;
+                border: #ddd solid 1px;
+                border-radius: 3px;
+                color: #474f58;
+            }
+            .xuan:hover,.active{
+                background: #1071E0;
+                color: #fff;
+                border: #197FC7 solid 1px;
+            }
+        }
+    }
+    .site-title{
+        margin-bottom: 10px;
+        padding-left: 80px;
+        background: url(../../images/icon-siteInfo-TBG.png) left center no-repeat;
+        h3{
+            display: inline-block;
+            padding-right: 80px;
+            font-size: 18px;
+            color: #1071E0;
+            background: url(../../images/icon-siteInfo-TBG.png) right center no-repeat;
+        }
+    }
+    .sitesInfo-text{
+        margin-bottom: 20px;
+        font-size: 14px;
+        color: #474f58;
+        line-height: 150%;
+    }
+}
+
+// 便民服务页面2016年5月12日18:50:47
+.bmService-box{
+    padding:20px 10px !important;
+    .bmService-list{
+        li{
+            .l-float();
+            padding: 10px 0;
+            border-bottom: #ddd dashed 1px;
+            .img{
+                padding: 4px;
+                border-bottom: 2px solid #dae0e5\9;
+                -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            }
+        }
+        .bmService-text{
+            width: 650px;
+            .intro{
+                height: 70px;
+                margin-bottom: 10px;
+                overflow: hidden;
+                line-height: 22px;
+            }
+            .time{
+                 padding-bottom: 18px;
+                span{
+                    display: inline-block;
+                    width:250px;
+                }
+            }
+
+        }
+    }
+}
