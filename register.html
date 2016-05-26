@@ -113,7 +113,7 @@
                             </div>
                         </li>
                         <li>
-                            <a class="items  active" href="siteService.html">场馆服务</a>
+                            <a class="items" href="siteService.html">场馆服务</a>
                             <div class="down-nav">
                                 <ul>
                                     <li>
@@ -171,78 +171,55 @@
             </div>
         </div>
     </div>
-    <div class="main mb16 mt16">
-        <div class="list-banner">
-            <a href=""><img src="update/list-banner.png" height="228" width="1200" alt=""></a>
-        </div>
-    </div>
-    <div class="main mb16 l-float">
-        <div class="l-left w260" id="news-sub">
-            <div class="columu-title mb6 border-none l-float">
-                <h3 class="title l-left">场馆服务</h3>
+    <div class="container">
+        <div class="main pdt36 mb16">
+            <div class="u-sign-tit">
+                <a href=""><img src="images/usercenter/u-signstep-1.png" alt=""></a>
             </div>
-            <div class="accordion"><a href="##"><h4>场馆预定</h4></a></div>
-            <div class="accordion-desc">
-                <p><a class="active" href="">篮球场</a></p>
-                <p><a href="">足球场</a></p>
-                <p><a href="">游泳池</a></p>
-                <p><a href="">游泳池</a></p>
-                <p><a href="">羽毛球场</a></p>
-            </div>
-            <div class="accordion"><a href="##"><h4>体育设施</h4></a></div>
-            <div class="accordion-desc">
-                <p><a href="">政策法规</a></p>
-                <p><a href="">招投标</a></p>
-                <p><a href="">房地产</a></p>
-            </div>
-            <div class="accordion"><a href="##"><h4>体育指导</h4></a></div>
-            <div class="accordion-desc">
-                <p><a href="">群体体育</a></p>
-                <p><a href="">活力体育</a></p>
-                <p><a href="">希望体育</a></p>
-            </div>
-            <div class="accordion"><a href="##"><h4>免费开放</h4></a></div>
-            <div class="accordion-desc">
-                <p><a href="">群体体育</a></p>
-                <p><a href="">活力体育</a></p>
-                <p><a href="">希望体育</a></p>
-            </div>
-        </div>
-        <div class="l-right" id="news-list">
-            <div class="container pd10 mb10">
-                <div class="font24 col-lan"><a class="" href="index.html">场馆服务</a>&nbsp;&gt;&nbsp;<a class="" href="index.html">场馆预定</a>&nbsp;&gt;&nbsp;<span class="">篮球场</span>
-                </div>
-            </div>
-            <div class="siteinfo-box listbox-border">
-                <div class="l-float mb40">
-                    <img class="l-left" src="update/siteinfo01.png" height="202" width="306" alt="">
-                    <div class="parameter l-right">
-                        <h3 class="title font24 col-lan pdb20">英雄传说搏击主题馆</h3>
-                        <p class="time pdb20 font14">开放日：2015/11/12-2015/12/21</p>
-                        <p class="input pdb20"><span class="font14 col-lan mr10">预定时间</span> <input class="inputTime" type="text" value="2016-5-12"></p>
-                        <div class="selectTime l-float">
-                            <span class="font14 col-lan l-left w60">选择时间</span>
-                            <div class="l-right w370">
-                                <a class="xuan mr10 active" href="">09:30-12:00</a><a class="xuan mr10" href="">12:30-15:00</a><a class="xuan mr10" href="">17:30-21:00</a>
+            <div class="u-sign-box">
+                <div class="l-register-left l-left">
+                        <div class="form">
+                            <div class="div-name">
+                            <label for="phone">手机号码：</label>
+                            <input type="text" id="phone" class="infos inputs" placeholder="请输入手机号" />
+                            <em>*</em>
+                            </div>
+                            <div class="div-ranks">
+                                <label for="ranks">验证码：</label>
+                                <input type="text" id="ranks" class="infos inputs"/>
+                                <em>*</em>
+                                <span class="yzm"><img src="images/usercenter/yanzhengma.png" height="34" width="80" alt=""></span>
+                                <a href="" title="看不清楚，换一张">看不清楚，换一张</a>
+                            </div>
+                            <div class="div-phone">
+                                <label for="name">短信验证码：</label><input type="text" id="name" class="infos inputs" placeholder="请输入验证码" />
+                                <em>*</em>
+                                <a href="javascript:;" class="send1" onclick="sends.send();">免费获取短信验证码</a>
+                            </div>
+
+                            <div class="div-agreement">
+                                <input type="checkbox" class="checkbox l-left" checked="checked" id="readme" onclick="agreeonProtocol();">
+                                <p class="l-left hover"  for="protocol">同意并已阅读<a href="#" id="protocol">《文慧通用户服务协议》</a></p>
+                            </div>
+                            <div class="div-conform">
+                                <a href="register02.html" class="conform" onclick="sends.conform();">下一步</a>
                             </div>
                         </div>
-                        <p class=""><a class="btn btn-info mr10" id="showPopTxt" href="##">立即预定</a> <span class="font16 col-lan ">客服电话：0760-89873810 </span></p>
+                    </div>
+                <div class="u-signbox-r l-right">
+                    <div class="u-numed-box">
+                        <div class="u-numed-tit">
+                            <h1>已有账号?</h1>
+                            <p class="pd10 lh24">成为网站会员，可以免费发预约场馆、预定门票、以及用积分兑换礼品。</p>
+                            <a href="javascript:;" class="u-numed-btn">立即登录</a>
+                        </div>
+                    </div>
+                    <div class="u-numed-box" style="border: none;">
+                        <h1>客服热线：</h1>
+                        <div class="text-al pd10 font24 col-lan">400-888-8888</div>
                     </div>
                 </div>
-                <div class="site-title l-float">
-                    <h3>场馆介绍</h3>
-                </div>
-                <div class="sitesInfo-text">
-                      英雄传说(深圳)搏击主题运动馆，坐落于深圳福田区体育公园，总面积3500余平米，全新超奢华时尚装修，通透式器械大厅，团体操课，综合格
-                斗训练区，有氧运动区，动感单车室，TRX悬挂训练，小球类及多功能厅，VIP训练区一应俱全。本运动馆开设有中国太极冠军亲自指导的特色太极养
-                生课程，并定期举办自由搏击比赛。全力打造专业的综合性高端运动馆。
-                </div>
-                <div class="site-title l-float">
-                    <h3>场馆导航</h3>
-                </div>
-                <iframe src="map.html" width="100%" height="450" frameborder="0"></iframe>
             </div>
-
         </div>
     </div>
     <div class="l-fooder-box bg-fooder">
@@ -267,81 +244,5 @@
             <p class="text-ac col-bai font14">版权所有：中山火炬高技术产业开发区宣传文体服务中心<em></em>     粤ICP备14079610号   <em></em> 工信部网站</p>
         </div>
     </div>
-
-<!-- 弹出窗口代码 -->
-<div class="pop-bg">
-    <div class="pop-cont">
-        <!--title-->
-        <h3>填写预定信息</h3>
-        <!--content-->
-        <div class="pop-cont-input">
-            <ul>
-                <li>
-                    <span>名字：</span>
-                    <input type="text" placeholder="你的名字..." class="textbox"/>
-                </li>
-                <li>
-                    <span class="ttl">手机：</span>
-                    <input type="text" placeholder="你的手机号码..." class="textbox"/>
-                </li>
-                <li>
-                    <span class="ttl">证件：</span>
-                    <input type="text" placeholder="你的身份证号码..." class="textbox"/>
-                </li>
-                <li>
-                    <span class="ttl">备注：</span>
-                    <textarea class="textarea" style="height:50px;width:194px;"  placeholder="预留输入框，这个可删..."></textarea>
-                </li>
-                <li>
-                    <span class="ttl">下拉：</span>
-                    <select class="select">
-                        <option>这是个</option>
-                    </select>
-                    <select class="select">
-                        <option>下拉演示</option>
-                    </select>
-                    <select class="select">
-                        <option>可删除</option>
-                    </select>
-                </li>
-            </ul>
-        </div>
-        <!--以pop-cont-text分界-->
-        <div class="pop-cont-text">这里是文字性提示信息！</div>
-        <!--bottom:operate->
-        button-->
-        <div class="btm-btn">
-            <input type="button" value="确认" class="input-btn trueBtn"/>
-            <input type="button" value="关闭" class="input-btn falseBtn"/>
-        </div>
-    </div>
-</div>
 <script src="js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
-<script type="text/javascript">
-    $(document).ready(function() {
-         $(".accordion-desc").fadeOut(0);
-         $(".accordion").click(function() {
-              $(".accordion-desc").not($(this).next()).slideUp('fast');
-              $(this).next().slideToggle(400);
-         });
-    });
-</script>
-<script>
- $(document).ready(function(){
- //弹出文本性提示框
- $("#showPopTxt").click(function(){
-   $(".pop-bg").fadeIn();
-   });
- //弹出：确认按钮
- $(".trueBtn").click(function(){
-   alert("你点击了确认！");//测试
-   $(".pop-bg").fadeOut();
-   });
- //弹出：取消或关闭按钮
- $(".falseBtn").click(function(){
-   alert("你点击了取消/关闭！");//测试
-   $(".pop-bg").fadeOut();
-   });
- });
- </script>
 </body>

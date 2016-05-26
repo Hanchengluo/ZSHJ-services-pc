@@ -20,9 +20,9 @@
     }
     .form-control {
         display: block;
-        height: 34px;
+        height: 32px;
         width: 100%;
-        padding: 0 8px;
+        text-indent: 8px;
         font-size: 14px;
         line-height: 1.42857143;
         color: #555;
@@ -41,6 +41,35 @@
         border: 1px solid #0BC4E2;
         -webkit-box-shadow: 0 0 4px rgba(18, 205, 214, 0.8);
         box-shadow:  0 0 4px rgba(18, 205, 214, 0.8);
+    }
+    .disabled{
+        cursor: no-drop;
+        background-color: #B2B2B3 !important;
+        border-color: #ccc !important;
+    }
+    .errorTips {
+        float: left;
+        color: red;
+        margin: 0 8px;
+        height: 34px;
+        line-height: 34px;
+        text-indent: 6px;
+    }
+    .uploadImg {
+        display: inline-block;
+        padding: 10px;
+        background: #f8f8f8;
+        position: relative;
+        border: 1px #1F97ED solid;
+        input {
+            display: none;
+        }
+         span {
+            display: block;
+            font-size: 12px;
+            text-align: center;
+            color: #1F97ED;
+        }
     }
     .textarea textarea {
         height: auto;
@@ -134,7 +163,7 @@
 .textbox{
     padding:0 4px;
     width: 200px;
-    height: 30px;
-    line-height: 30px;
+    height: 26px;
+    line-height: 26px;
     border:#ddd solid 1px;
 }
